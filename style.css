@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    min-width: 375px;
+    
+}
+/* attribute classes */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.dspl {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 900;
+}
+.dspl>img{
+    width:2rem;
+    height: 2rem;
+}
+.dspl>h1{
+    font-size: 40px;
+    font-family: "Work Sans", sans-serif;
+}
+.clmn {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1st container with greyish purple bcgrnd */
+.bg1 {
+    width: 100%;
+    height: 30vh;
+    background-image: url("background-pattern-desktop.svg");
+}
+
+/* 2nd container containing main cards inside it */
+.bg2 {
+
+    background-color: hsl(275, 100%, 97%);
+    padding: 0 1rem 1rem 1rem;
+
+}
+
+/* card  is having relative position on the behalf of bg2 */
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    position: relative;
+    bottom: 80px;
+    margin: auto;
+    
+}
+
+
+/* the boxes are the containers having questions and answers as a link and para respectively */
+.box1,
+.box2,
+.box3,
+.box4 {
+    box-shadow: 1px 1px hsl(275, 100%, 97%);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* These are the containers having questions with a h4 tang and a container having an image inside it  */
+.que1,
+.que2,
+.que3,
+.que4 {
+
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+
+}
+
+/* these are the containers having answers inside them as a para */
+.ans1,
+.ans2,
+.ans3,
+.ans4 {
+    display: none;
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+    text-align: start;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+}
+/* all anchors tahs styled here! */
+a {
+    text-decoration: none;
+    
+}
+
+/* provided an hover effect on h4 tags */
+h4:hover{
+    color: hsl(293, 92%, 40%);
+    cursor: pointer;
+
+}
+
+
+
+@media screen and (min-width:375px) {
+
+    br {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .ans1,
+    .ans2,
+    .ans3,
+    .ans4 {
+      line-height: 28px;
+     font-size: 18px;
+    }
+
+}
